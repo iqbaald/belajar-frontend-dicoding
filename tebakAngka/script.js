@@ -156,7 +156,7 @@ window.addEventListener("beforeunload", function () {
 });
 
 destroyDataButton.addEventListener("click", function () {
-  console.log("kehapus");
   localStorage.clear();
   sessionStorage.clear();
+  alert("Mohon me-refresh halaman ini kembali!");
 });
