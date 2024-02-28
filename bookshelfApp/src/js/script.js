@@ -125,9 +125,11 @@ function saveData() {
 function addBook() {
   const bookTitle = document.getElementById("inputBookTitle").value;
   const bookAuthor = document.getElementById("inputBookAuthor").value;
-  const bookYear = document.getElementById("inputBookYear").value;
+  const bookYear = parseInt(document.getElementById("inputBookYear").value);
   const checkbox = document.getElementById("inputBookIsComplete");
   const isComplete = checkbox.checked;
+
+  // console.log(typeof bookYear);
 
   const generateID = generateId();
   const bookObject = generateBookObject(
