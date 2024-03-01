@@ -173,7 +173,6 @@ small {
 }
 
 .column-1 {
-  padding-top: 10rem;
   margin-right: 1.5rem;
   text-align: justify;
 }
@@ -189,6 +188,10 @@ small {
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
 }
+img {
+  display: flex;
+  justify-content: center;
+}
 
 .column-1 h1 {
   font-size: 3rem;
@@ -201,22 +204,177 @@ small {
   color: #f299af;
 }
 
-.column-1 img {
-  max-width: 100%;
+.column-2 img {
+  max-width: 400px;
+}
+
+/* =============== Produk ================ */
+
+/* .section {
+  padding: 7rem 0;
+} */
+.produk {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: 47rem;
+}
+
+.theTitle {
+  display: inline-block;
+  padding-bottom: 1rem;
+  line-height: 1;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.mini-header {
+  text-align: center;
+  color: #f299af;
+}
+
+.mini-header .text {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-wrap {
+  margin: 1.7rem 0.8rem;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  min-height: 450px;
+  background-color: #42506d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f299af;
+  transition: 0.3s;
+}
+
+.card-wrap:hover .card {
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+}
+
+.card-wrap:hover .card:hover:after {
+  height: 8px;
+}
+
+.icon {
+  width: 60px;
+  margin-left: 43%;
+  margin-bottom: 1.7rem;
+}
+
+.title-sm {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 0.8;
+  color: #f299af;
+}
+
+.card .text {
+  font-size: 1.15rem;
+  margin: 1.8rem 0;
+  color: #f299af;
+}
+
+.btn.small {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+}
+
+/* =============== Hubungi ================ */
+
+.hubungi {
+  padding-top: 10rem;
+  position: relative;
+}
+
+.hubungi .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-column-gap: 3rem;
+}
+
+.contact-input {
+  padding: 2rem 3rem;
+  margin: 1.5rem 0;
+  outline: none;
+  border: none;
+  background: #f3f3f3;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.contact-input::placeholder {
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.contact-input.textarea {
+  resize: none;
+  min-height: 280px;
+}
+
+.contact-input:hover {
+  background: #ececec;
+}
+
+.contact-input:focus {
+  background: #eaeaea;
+}
+
+.send-btn {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 /* =============== Footer ================ */
 
 footer {
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.1rem;
   background-color: black;
   color: #ffffff;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
 }
 
 footer p b {
@@ -231,7 +389,7 @@ footer p > a {
 }
 
 /* ================== responsive setting ==================== */
-/* 
+
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 60rem;
@@ -642,4 +800,4 @@ footer p > a {
   footer {
     width: 100%;
   }
-} */
+}
