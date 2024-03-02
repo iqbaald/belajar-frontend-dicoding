@@ -37,7 +37,7 @@ nav {
 
 .logo a {
   padding: 2px;
-  color: #f299af;
+  color: white;
   font-size: 60px;
   font-family: "Dawning of a New Day", cursive;
   text-decoration: none;
@@ -53,7 +53,7 @@ nav {
 
 .navigation li a {
   text-decoration: none;
-  color: #f299af;
+  color: white;
   margin-right: 30px;
 }
 
@@ -73,10 +73,9 @@ nav {
   max-width: 100%;
   background-color: #3b4863;
   margin: 0 auto;
-  padding: 0 15rem;
+  padding: 0 8rem;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .jumbotron {
@@ -91,7 +90,7 @@ nav {
 
 .jumbotron h1 {
   font-size: 2.5rem;
-  color: #f299af;
+  color: white;
   margin-bottom: 3rem;
   max-width: 1000px;
 }
@@ -106,10 +105,10 @@ small {
   font-size: 1.2rem;
   padding: 0.85rem 2rem;
   display: inline-block;
-  background-color: #f299af;
+  background-color: white;
   color: #2c3850;
   text-decoration: none;
-  border: 2px solid #f299af;
+  border: 2px solid white;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.1s;
@@ -122,14 +121,14 @@ small {
 
 .btn:hover {
   background-color: transparent;
-  color: #f299af;
+  color: white;
 }
 
-/* =============== Aside ================ */
+/* =============== .column-1 ================ */
 
-/* aside {
+/* .column-1 {
   background-color: #2c3850;
-  color: #f299af;
+  color: white;
   padding: 2rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
@@ -155,7 +154,7 @@ small {
 }
 
 .profile a {
-  color: #f299af;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 } */
@@ -163,26 +162,49 @@ small {
 /* =============== Tentang ================ */
 
 /* grid setting */
-.container.grid-2 {
-  grid-template-columns: 70% 30%;
-  height: 100vh;
+main {
+  grid-template-columns: 65% 35%;
+  height: 70rem;
   text-align: left;
   display: grid;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+.column-2 {
+  order: 1;
+  margin-right: 1.5rem;
+  text-align: justify;
+  padding: 8rem;
+  padding-right: 0;
+}
+
+.column-2 h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.column-2 text {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.column-2 img {
+  max-width: 100%;
+  margin-bottom: 2rem;
 }
 
 .column-1 {
-  padding-top: 10rem;
-  margin-right: 1.5rem;
-  text-align: justify;
-}
-.column-2 {
+  order: 2;
   margin-left: 1.5rem;
   transition: 0.3s;
+  color: white;
+  width: 20rem;
 }
 
-.column-2:hover {
+.column-1:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -190,19 +212,43 @@ small {
   -o-transform: scale(1.05);
 }
 
-.column-1 h1 {
-  font-size: 3rem;
-  color: #f299af;
-  margin-bottom: 1.5rem;
+.profile {
+  background: #2c3850;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin-top: -90px;
 }
 
-.column-1 text {
-  font-size: 1.5rem;
-  color: #f299af;
+.profile img {
+  margin: 20px;
+  width: 200px;
+  border-radius: 8px;
 }
 
-.column-1 img {
-  max-width: 100%;
+.profile p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.profile h1 {
+  font-size: 30px;
+}
+
+.profile h2 {
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile p {
+  font-weight: 100;
+  justify-content: center;
+  text-align: justify;
+  margin: 20px;
 }
 
 /* =============== Footer ================ */
@@ -258,22 +304,22 @@ footer p > a {
   .card .text {
     font-size: 1rem;
     margin: 1rem 0;
-    color: #f299af;
+    color: white;
   }
 
-  .column-1 {
+  .column-2 {
     min-height: 390px;
     max-width: 800px;
   }
-  .column-1 h1 {
+  .column-2 h1 {
     font-size: 2.5rem;
   }
 
-  .column-1 text {
+  .column-2 text {
     font-size: 1.3rem;
   }
 
-  .column-2 img {
+  .column-1 img {
     min-height: 390px;
     max-width: 290px;
     padding: 2.2rem 1.5rem;
@@ -353,7 +399,7 @@ footer p > a {
 
   .jumbotron h1 {
     font-size: 2rem;
-    color: #f299af;
+    color: white;
     margin-bottom: 2rem;
     max-width: 500px;
   }
@@ -380,10 +426,10 @@ footer p > a {
     margin-bottom: 10rem;
   }
 
-  .column-1 h1 {
+  .column-2 h1 {
     margin-bottom: 1rem;
   }
-  .column-2 img {
+  .column-1 img {
     max-width: 400px;
     padding: 2rem 10rem;
   }
@@ -456,21 +502,21 @@ footer p > a {
     max-width: 850px;
   }
 
-  .column-1 {
+  .column-2 {
     max-width: 80%;
     align-items: center;
   }
 
-  .column-1 h1 {
+  .column-2 h1 {
     font-size: 1.5rem;
   }
 
-  .column-1 text {
+  .column-2 text {
     font-size: 1rem;
     padding-right: 0;
   }
 
-  .column-2 img {
+  .column-1 img {
     padding-left: 2rem;
     min-height: 390px;
     max-width: 290px;
@@ -563,7 +609,7 @@ footer p > a {
   .card .text {
     font-size: 1rem;
     margin: 1rem 0;
-    color: #f299af;
+    color: white;
   }
 
   .btn.small {
@@ -618,17 +664,17 @@ footer p > a {
     margin-left: 60px;
   }
 
-  .column-1 h1 {
+  .column-2 h1 {
     margin-left: 0rem;
     text-align: justify;
   }
 
-  .column-1 text {
+  .column-2 text {
     margin-left: 0rem;
     text-align: justify;
   }
 
-  .column-2 img {
+  .column-1 img {
     margin-left: -5rem;
     padding: 0;
     padding-top: 10rem;
